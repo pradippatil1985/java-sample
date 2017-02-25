@@ -37,8 +37,10 @@ public class MangoDatabaseService {
 		this.table.insert(document);
 	}
 
-	public void update() {
-
+	public void update(BasicDBObject query, BasicDBObject newDocument) {
+		BasicDBObject updateObj = new BasicDBObject();
+		updateObj.put("$set", newDocument);
+		this.table.update(query, updateObj);
 	}
 
 	public void delete() {
