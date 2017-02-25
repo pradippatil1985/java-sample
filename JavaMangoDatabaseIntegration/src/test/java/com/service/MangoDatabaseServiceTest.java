@@ -38,7 +38,7 @@ public class MangoDatabaseServiceTest extends TestCase {
 		/**** Update ****/
 		// search document where name="pradip" and update it with new values
 		BasicDBObject query = new BasicDBObject();
-		query.put("name", "pradip");
+		query.put("name", "Pradip");
 		
 		BasicDBObject newDocument = new BasicDBObject();
 		newDocument.put("name", "Aparna");
