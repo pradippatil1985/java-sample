@@ -8,9 +8,9 @@ import com.mongodb.BasicDBObject;
 
 import junit.framework.TestCase;
 
-public class MangoDatabaseServiceTest extends TestCase {
+public class MongoDatabaseServiceTest extends TestCase {
 	
-	private MangoDatabaseService mangoDatabaseService = new MangoDatabaseService();
+	private MongoDatabaseService mangoDatabaseService = new MongoDatabaseService();
 
 	@Test
 	public void testInsertData() {

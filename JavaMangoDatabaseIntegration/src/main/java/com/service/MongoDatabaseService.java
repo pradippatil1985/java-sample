@@ -6,7 +6,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 
-public class MangoDatabaseService {
+public class MongoDatabaseService {
 
 	/**** Connect to MongoDB ****/
 	// Since 2.10.0, uses MongoClient
@@ -21,7 +21,7 @@ public class MangoDatabaseService {
 	private DBCollection table = null;
 
 	@SuppressWarnings("deprecation")
-	public MangoDatabaseService() {
+	public MongoDatabaseService() {
 		this.mongo = new MongoClient("localhost", 27017);
 		this.db = mongo.getDB("testdb");
 		this.table = db.getCollection("user");
