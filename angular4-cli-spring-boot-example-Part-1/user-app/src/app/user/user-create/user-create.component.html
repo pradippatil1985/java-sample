@@ -1,0 +1,39 @@
+<p>user-create works!</p>
+<script>
+	angular.module('inputExample', [])
+		.controller('ExampleController', [ '$scope', function($scope) {
+			$scope.user = {
+				firstName : '',
+				lastName : '',
+				email : ''
+			};
+		} ]);
+</script>
+<div ng-controller="ExampleController">
+	<form name="myForm">
+		<label> First Name: <input type="text" name="firstName"
+			ng-model="user.firstName" required>
+		</label>
+		<div role="alert">
+			<span class="error" ng-show="myForm.firstName.$error.required">
+				Required!</span>
+		</div>
+		<label> Last Name: <input type="text" name="lastName"
+			ng-model="user.lastName" ng-minlength="3" ng-maxlength="10">
+		</label>
+		<div role="alert">
+			<span class="error" ng-show="myForm.lastName.$error.minlength">
+				Too short!</span> <span class="error"
+				ng-show="myForm.lastName.$error.maxlength"> Too long!</span>
+		</div>
+		<label> Email: <input type="text" name="email"
+			ng-model="user.email" ng-minlength="3" ng-maxlength="10">
+		</label>
+		<div role="alert">
+			<span class="error" ng-show="myForm.email.$error.minlength">
+				Too short!</span> <span class="error"
+				ng-show="myForm.email.$error.maxlength"> Too long!</span>
+		</div>
+	</form>
+	
+</div>
