@@ -1,0 +1,18 @@
+<User>
+	<firstName></firstName>
+	<lastName></lastName>
+	<addresses>
+		<address>
+			<city></city>
+			<zipCode></zipCode>
+			<state></state>
+			<country></country>
+		</address>
+		<address>
+			<city></city>
+			<zipCode></zipCode>
+			<state></state>
+			<country></country>
+		</address>
+	</addresses>
+</User>
